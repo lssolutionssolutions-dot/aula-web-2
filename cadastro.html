@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de voluntarios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Voluntário / Doador</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1> Cadastro de voluntarios</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Indice</a></li>
-                <li><a href="projeto.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2> Formulário De Cadstro de voluntários</h2>
-            <form>
-                <fieldset>
-                    <legend> Dados Pessoais</legend>
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" required>
-                    
-                </fieldset>
-            </form>
-        </section>
-    </main>
-    
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Cadastro de Voluntário / Doador</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <form id="formCadastro">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" maxlength="14" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" maxlength="15" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" maxlength="9" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="SP">SP</option>
+          <option value="RJ">RJ</option>
+          <option value="MG">MG</option>
+          <option value="RS">RS</option>
+          <option value="PR">PR</option>
+          <option value="SC">SC</option>
+          <option value="BA">BA</option>
+          <option value="PE">PE</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tipo de Participação</legend>
+        <label><input type="radio" name="tipo" value="voluntario" required> Voluntário</label>
+        <label><input type="radio" name="tipo" value="doador" required> Doador</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Adicionais</legend>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre seu interesse em participar..."></textarea>
+      </fieldset>
+
+      <button type="submit">Enviar Cadastro</button>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva | Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Máscaras de campos -->
+  <script src="js/mascaras.js"></script>
+
 </body>
 </html>
