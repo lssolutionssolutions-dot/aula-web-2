@@ -56,9 +56,9 @@ O objetivo é criar uma estrutura semântica completa, responsiva e validada, re
 
 ## 🖥️ **Link do Projeto no GitHub**
 
-🔗 [https://github.com/SeuUsuario/ong-esperanca-viva](https://github.com/SeuUsuario/ong-esperanca-viva)
+🔗 [https://github.com/lssolutionssolutions-dot/aula-web-2](https://github.com/lssolutionssolutions-dot/aula-web-2)
 
-*(Substitua `SeuUsuario` pelo seu nome de usuário do GitHub antes de enviar.)*
+*(meu usuario :lssolutionssolutions-dot/aula-web-2] 
 
 ---
 
