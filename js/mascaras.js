@@ -1,25 +1,29 @@
-// === MÁSCARAS DE FORMULÁRIO ===
+// Função genérica para aplicar máscara
+function aplicarMascara(input, mascara) {
+  input.addEventListener('input', function() {
+    let valor = input.value.replace(/\D/g, ''); // remove tudo que não for número
+    let resultado = '';
+    let j = 0;
 
-// CPF
-document.getElementById("cpf").addEventListener("input", function () {
-  let cpf = this.value.replace(/\D/g, "");
-  cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-  cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-  cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-  this.value = cpf;
-});
+    for (let i = 0; i < mascara.length && j < valor.length; i++) {
+      if (mascara[i] === '#') {
+        resultado += valor[j++];
+      } else {
+        resultado += mascara[i];
+      }
+    }
 
-// TELEFONE
-document.getElementById("telefone").addEventListener("input", function () {
-  let tel = this.value.replace(/\D/g, "");
-  tel = tel.replace(/^(\d{2})(\d)/g, "($1) $2");
-  tel = tel.replace(/(\d{5})(\d{4})$/, "$1-$2");
-  this.value = tel;
-});
+    input.value = resultado;
+  });
+}
 
-// CEP
-document.getElementById("cep").addEventListener("input", function () {
-  let cep = this.value.replace(/\D/g, "");
-  cep = cep.replace(/^(\d{5})(\d)/, "$1-$2");
-  this.value = cep;
+// Quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+  const cpf = document.getElementById('cpf');
+  const cep = document.getElementById('cep');
+  const telefone = document.getElementById('telefone');
+
+  if (cpf) aplicarMascara(cpf, '###.###.###-##');
+  if (cep) aplicarMascara(cep, '#####-###');
+  if (telefone) aplicarMascara(telefone, '(##) #####-####');
 });

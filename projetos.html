@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos - ONG Esperança Viva</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Projetos | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css"> <!-- layout SEMPRE por último -->
 </head>
 <body>
   <header>
@@ -19,31 +22,46 @@
   </header>
 
   <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="titulo-destaque">🌟 Faça Parte do Nosso Voluntariado</h2>
+  <p class="descricao-destaque">
+    <strong>Transforme o seu tempo em solidariedade!</strong>  
+    Junte-se aos nossos voluntários e participe de ações que inspiram, educam e transformam vidas em diversas comunidades.
+  
+        <img src="imagens2/conceito_de_trabalho_em_equipe_ambiente_e_voluntariado.jpg" alt="Voluntariado">
+      </section>
 
-  <section id="voluntariado">
-    <h2>Voluntariado</h2>
-    <p>Participe de nossos programas de voluntariado e ajude a transformar vidas.</p>
-    <img src="imagens2/alunos-reciclam-e-projeto-voluntario-comunitario-com-jovens-limpando-plastico-e-lixo-reciclagem-feliz-e-trabalho-de-caridade-para-um-serv.jpg" alt="Voluntário ajudando em projeto social" class="ilustrativa">
-  </section>
+      <section class="section gallery-projetos">
+  <h2 class="titulo-destaque">💚 Nossos Projetos em Destaque</h2>
 
-  <section id="destaques">
-    <h2>Projetos em Destaque</h2>
+  <div class="gallery-projetos">
+  <figure>
+    <img src="imagens2/entregas_de_alimentos.jpg" alt="Entrega de alimentos">
+    <figcaption>Entrega de alimentos — promovendo solidariedade e empatia.</figcaption>
+  </figure>
 
-    <article class="projeto">
-      <div class="texto">
-        <h3>Projeto Alimenta Esperança</h3>
-        <p>Distribuição de alimentos e itens essenciais para famílias em situação de vulnerabilidade.</p>
-      </div>
-      <img src="imagens2/alimentando_criança.jpg" alt="Ação de distribuição de alimentos">
-    </article>
+  <figure>
+    <img src="imagens2/distribuicao_de_comida.jpg" alt="Montagem de cestas básicas">
+    <figcaption>Montagem de cestas básicas — um gesto simples que alimenta vidas.</figcaption>
+  </figure>
 
-    <article class="projeto">
-      <div class="texto">
-        <h3>Educar para o Futuro</h3>
-        <p>Oficinas de capacitação e reforço escolar para crianças e jovens.</p>
-      </div>
-      <img src="imagens2/criança.jpg" alt="Crianças participando de oficinas educacionais">
-    </article>
-  </section>
+  <figure>
+    <img src="imagens2/voluntarios_em_acao.jpg" alt="Voluntários em ação">
+    <figcaption>Voluntários em ação — o coração da nossa missão social.</figcaption>
+  </figure>
 
+  <figure>
+    <img src="imagens2/crianças_plantando.jpg" alt="Oficinas com crianças">
+    <figcaption>Oficinas com crianças — desenvolvendo cidadania e inclusão.</figcaption>
+  </figure>
+</div> <!-- fecha .gallery-projetos -->
+</section> <!-- fecha section corretamente -->
+</div>
 </main>
+
+<footer>
+  <p>&copy;2025 ONG Esperança Viva | contato@ongesperanca.org.br</p>
+</footer>
+</body>
+</html>

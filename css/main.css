@@ -1,0 +1,320 @@
+/* === CONTEÚDO DAS PÁGINAS === */
+.section {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.section h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.section img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-2);
+}
+
+/* === GALERIA === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.gallery img {
+  width: calc(50% - var(--space-2));
+  border-radius: var(--radius-sm);
+/* === TÍTULOS ATRATIVOS === */
+.titulo-destaque {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #007bff, #00c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.titulo-destaque::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: #00aaff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.titulo-destaque:hover::after {
+  width: 100%;
+}
+
+/* === DESCRIÇÃO DESTAQUE === */
+.descricao-destaque {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.descricao-destaque strong {
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/* === EFEITO DE ENTRADA === */
+.section {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  
+/* === SEÇÃO DO FORMULÁRIO === */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background: #f5f8fa;
+  padding: 40px 20px;
+}
+
+/* Texto introdutório */
+.intro {
+  text-align: center;
+  max-width: 700px;
+}
+
+.intro h2 {
+  color: #0066cc;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+/* Formulário */
+.form-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 750px;
+}
+
+fieldset {
+  border: 1px solid #d8e3f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #fafcff;
+}
+
+legend {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.opcoes {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-cadastro {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cadastro:hover {
+  background: #0056b3;
+  transform: scale(1.03);
+/* === IMAGENS DE QUEM SOMOS === */
+.imagens-sobre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.imagens-sobre img {
+  width: 30%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease;
+}
+
+.imagens-sobre img:hover {
+  transform: scale(1.05);
+}
+
+/* === GALERIA DE PROJETOS === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery figure {
+  width: 45%;
+  background-color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.gallery figcaption {
+  font-size: var(--font-size-sm);
+  color: #333;
+  margin-top: 8px;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  .gallery figure {
+    width: 90%;
+  }
+  .imagens-sobre img {
+    width: 80%;
+  /* === AJUSTE DE LAYOUT DA GALERIA === */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery figure {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.gallery figcaption {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* === IMAGENS DA SEÇÃO "QUEM SOMOS" === */
+.imagens-sobre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.imagens-sobre img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagens-sobre img:hover {
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  .gallery figure {
+    width: 90%;
+  }
+
+  .imagens-sobre img {
+    width: 80%;
+  }
+}
+
+
+
+
+

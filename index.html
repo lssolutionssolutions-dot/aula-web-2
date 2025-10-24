@@ -4,50 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ONG Esperança Viva</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>ONG Esperança Viva</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
+
+    <!-- Botão do menu hambúrguer (aparece apenas no mobile) -->
+  <button class="menu-toggle" aria-label="Abrir menu">
+    ☰
+  </button>
+
+  <nav class="menu">
+    <ul>
+            <li><a href="index.html">Início</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
   <main>
+    <div class="container">
+      <section class="section quem-somos">
+  
 
-    <!-- Seção Quem Somos -->
-    <section id="quem-somos">
-      <h2>Quem Somos</h2>
-      <p>
-        A ONG Esperança Viva atua há mais de 10 anos promovendo ações sociais que transformam vidas.
-        Nosso objetivo é oferecer apoio, educação e oportunidades para comunidades em situação de vulnerabilidade.
-      </p>
-      <img src="imagens2/logo1.jpg" alt="Logo da ONG Esperança Viva" class="logo-ong">
-    </section>
+        <h2 class="titulo-destaque">💚 Quem Somos</h2>
+  <p class="texto-sobre">
+    Há mais de <strong>10 anos</strong>, a <strong>ONG Esperança Viva</strong> dedica-se a transformar realidades por meio de <strong>ações sociais, educação e solidariedade</strong>.
+    Nosso propósito é levar <span class="destaque">apoio, dignidade e oportunidades</span> às comunidades em situação de vulnerabilidade.
+  </p>
+  <p class="texto-sobre">
+    Acreditamos que cada gesto de amor pode gerar grandes mudanças.  
+    <strong>Juntos, podemos construir um futuro mais justo e humano!</strong>
+  </p>
+        <img src="imagens2/logo_ong.jpeg" alt="Ação ambiental">
+        <img src="imagens2/logo1.jpg" alt="Ação ambiental">
+<img src="imagens2/adolencentes_platando.jpg" alt="Reflorestamento">
+</section>
 
-    <!-- Seção Galeria -->
-    <section id="galeria">
-      <h2>Galeria de Projetos</h2>
-      <div class="galeria">
-        <img src="imagens2/volutariado_reciclagem.jpg"
-             alt="Voluntariado_reciclagem" class="foto-projeto">
-        <img src="imagens2/criança.jpg"
-             alt="Atividade social com crianças" class="foto-projeto">
-      </div>
-    </section>
+<section class="section gallery-home">
+  <h2 class="titulo-destaque">💙 Galeria de Projetos</h2>
 
-  </main>
+  <!-- Container da grade -->
+  <div class="gallery-home">
+    <figure>
+      <img src="imagens2/volutariado_reciclagem.jpg" alt="Mutirão de Reciclagem">
+      <figcaption>♻️ Mutirão de Reciclagem — conscientização e cuidado com o meio ambiente.</figcaption>
+    </figure>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 ONG Esperança Viva | Contato: contato@ongesperanca.org.br</p>
+    <figure>
+      <img src="imagens2/crianças_aprendendo.jpg" alt="Educação Infantil">
+      <figcaption>👧 Educação Infantil — aprendendo valores de solidariedade desde cedo.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="imagens2/alimentando_criança.jpg" alt="Projeto Alimenta Esperança">
+      <figcaption>🍎 Projeto Alimenta Esperança — levando dignidade e sustento a famílias carentes.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="imagens2/educação_fisica.jpg" alt="Esporte e Cidadania">
+      <figcaption>⚽ Esporte e Cidadania — inclusão social através do esporte.</figcaption>
+    </figure>
+  </div>
+      </section>
+</div> <!-- fecha .container -->
+  </main> <!-- fecha main -->
+
+      <footer>
+  <p>&copy;2025 ONG Esperança Viva | contato@ongesperanca.org.br</p>
   </footer>
+  <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu ul");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
+                 

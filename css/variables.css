@@ -1,0 +1,26 @@
+:root {
+  /* CORES */
+  --color-primary: #004aad;
+  --color-hover: #1e90ff;
+  --color-dark: #000;
+  --color-light: #f5f5f5;
+  --color-white: #fff;
+
+  /* TIPOGRAFIA */
+  --font-family: 'Poppins', Arial, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 22px;
+
+  /* ESPAÇAMENTO */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+
+  /* ESTILOS DE BORDA E SOMBRA */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
